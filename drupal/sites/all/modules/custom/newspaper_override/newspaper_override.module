@@ -1,0 +1,48 @@
+<?php
+require_once(libraries_get_path('twitter') . '/twitter.lib.php');
+
+function newspaper_override_menu() {
+  $items = array();
+  $items['news-ajax/twitter/get-timeline'] = array(
+    'page callback' => 'newspaper_override_get_timeline',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK
+  );
+  return $items;  
+}
+
+function newspaper_override_get_timeline() {
+  global $user;
+  $user_profile = user_load($user->uid);  
+  
+  $timeline_response = array();
+  
+  if (count($user_profile->twitter_accounts) >= 0) {
+    $twitter_acc = $user_profile->twitter_accounts;
+    $first_account = $twitter_acc[0];
+    
+    $user_timeline = _newspaper_override_get_user_timeline($first_account->id);
+    
+    foreach ($user_timeline as $timeline_item) {
+      $timeline_response[] = array(
+        'text' => $timeline_item->text,
+        'created_at' => $timeline_item->created_at, 
+        'favorited' => $timeline_item->favorited, 
+      );      
+    } 
+  }
+  drupal_json_output(array('data' => $timeline_response));
+  exit();
+}
+
+function _newspaper_override_get_user_timeline($twitter_uid) {
+  module_load_include('php', 'oauth_common', 'lib/OAuth');
+  $account = twitter_account_load($twitter_uid);
+  $since = db_query("SELECT MAX(twitter_id) FROM {twitter} WHERE screen_name = :screen_name", array(':screen_name' => $account->screen_name))->fetchField();
+  $twitter = twitter_connect($account);
+  $params = array();
+  if ($since) {
+    $params['since_id'] = $since;
+  }    
+  return $twitter->user_timeline($account->id, $params);
+}

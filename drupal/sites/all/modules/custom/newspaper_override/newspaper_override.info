@@ -1,0 +1,7 @@
+name = Newspaper Override
+description = Main module of newspaper.
+core = 7.x
+version = 7.x-1.0
+package = Newspaper
+
+dependencies[] = views

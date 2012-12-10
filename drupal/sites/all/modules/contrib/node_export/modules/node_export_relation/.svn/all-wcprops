@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/company/!svn/ver/3/trunk/drupal/sites/all/modules/contrib/node_export/modules/node_export_relation
+END
+node_export_relation.module
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/company/!svn/ver/3/trunk/drupal/sites/all/modules/contrib/node_export/modules/node_export_relation/node_export_relation.module
+END
+node_export_relation.install
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/company/!svn/ver/3/trunk/drupal/sites/all/modules/contrib/node_export/modules/node_export_relation/node_export_relation.install
+END
+node_export_relation.taxonomy.inc
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/company/!svn/ver/3/trunk/drupal/sites/all/modules/contrib/node_export/modules/node_export_relation/node_export_relation.taxonomy.inc
+END
+node_export_relation.info
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/company/!svn/ver/3/trunk/drupal/sites/all/modules/contrib/node_export/modules/node_export_relation/node_export_relation.info
+END
+node_export_relation.node_reference.inc
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/company/!svn/ver/3/trunk/drupal/sites/all/modules/contrib/node_export/modules/node_export_relation/node_export_relation.node_reference.inc
+END
+node_export_relation.og.inc
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/company/!svn/ver/3/trunk/drupal/sites/all/modules/contrib/node_export/modules/node_export_relation/node_export_relation.og.inc
+END

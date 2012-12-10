@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/company/!svn/ver/3/trunk/drupal/sites/all/modules/contrib/uuid
+END
+uuid.info
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/company/!svn/ver/3/trunk/drupal/sites/all/modules/contrib/uuid/uuid.info
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/company/!svn/ver/3/trunk/drupal/sites/all/modules/contrib/uuid/LICENSE.txt
+END
+uuid.drush.inc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/company/!svn/ver/3/trunk/drupal/sites/all/modules/contrib/uuid/uuid.drush.inc
+END
+uuid.api.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/company/!svn/ver/3/trunk/drupal/sites/all/modules/contrib/uuid/uuid.api.php
+END
+uuid.core.inc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/company/!svn/ver/3/trunk/drupal/sites/all/modules/contrib/uuid/uuid.core.inc
+END
+uuid.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/company/!svn/ver/3/trunk/drupal/sites/all/modules/contrib/uuid/uuid.admin.inc
+END
+uuid.views.inc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/company/!svn/ver/3/trunk/drupal/sites/all/modules/contrib/uuid/uuid.views.inc
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/company/!svn/ver/3/trunk/drupal/sites/all/modules/contrib/uuid/README.txt
+END
+uuid.install
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/company/!svn/ver/3/trunk/drupal/sites/all/modules/contrib/uuid/uuid.install
+END
+uuid.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/company/!svn/ver/3/trunk/drupal/sites/all/modules/contrib/uuid/uuid.inc
+END
+uuid.tokens.inc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/company/!svn/ver/3/trunk/drupal/sites/all/modules/contrib/uuid/uuid.tokens.inc
+END
+uuid.test
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/company/!svn/ver/3/trunk/drupal/sites/all/modules/contrib/uuid/uuid.test
+END
+uuid.entity.inc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/company/!svn/ver/3/trunk/drupal/sites/all/modules/contrib/uuid/uuid.entity.inc
+END
+uuid.module
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/company/!svn/ver/3/trunk/drupal/sites/all/modules/contrib/uuid/uuid.module
+END
+uuid.features.inc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/company/!svn/ver/3/trunk/drupal/sites/all/modules/contrib/uuid/uuid.features.inc
+END
