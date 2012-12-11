@@ -30,19 +30,17 @@ function newspaper_override_get_timeline() {
         'favorited' => $timeline_item->favorited, 
       );      
     } 
-  }
+  }  
   drupal_json_output(array('data' => $timeline_response));
   exit();
 }
 
 function _newspaper_override_get_user_timeline($twitter_uid) {
   module_load_include('php', 'oauth_common', 'lib/OAuth');
-  $account = twitter_account_load($twitter_uid);
-  $since = db_query("SELECT MAX(twitter_id) FROM {twitter} WHERE screen_name = :screen_name", array(':screen_name' => $account->screen_name))->fetchField();
+  
+  $account = twitter_account_load($twitter_uid);  
   $twitter = twitter_connect($account);
-  $params = array();
-  if ($since) {
-    $params['since_id'] = $since;
-  }    
+  
+  $params = array('count' => '10');
   return $twitter->user_timeline($account->id, $params);
 }
