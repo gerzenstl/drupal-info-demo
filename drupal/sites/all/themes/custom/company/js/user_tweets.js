@@ -1,9 +1,11 @@
 ;(function (global) {  
-  
-  global.addEventListener("load", function () {
-    console.log("Dom Loaded");
-    getUserTimeline();    
-  });    
+  global.config = {
+    interval: '5000',
+    targetPluginId: 'footer-bottom-dash'
+  }
+  global.addEventListener("load", function () {   
+    setInterval(getUserTimeline, global.config.interval);    
+  });
   
   var updateTemplate = function(userTimeline) {    
     var itemCont = 0;
@@ -16,7 +18,8 @@
     }
     listContainer = listContainer + '</ul>';
     listContainer = listContainer + '</div>';    
-    var htmlTarget = document.getElementById('footer-bottom-dash');
+    var htmlTarget = document.getElementById(global.config.targetPluginId);
+    doc
     htmlTarget.innerHTML = listContainer;
   }
   
@@ -25,11 +28,12 @@
       xhr = new XMLHttpRequest();      
     xhr.open("GET", 'news-ajax/twitter/get-timeline');
     xhr.addEventListener("load", function (data) {
-
       var userTimeline = JSON.parse(data.target.response)
       updateTemplate(userTimeline);      
     });    
+    xhr.addEventListener("error", function () {
+      throw new Error("Could not load widget template file.");
+    });
     xhr.send();
-  }
-  
+  }  
 })(this);
